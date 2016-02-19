@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf ./dist && echo \"Dist has been rimraf'd\" ",
     "build": "babel-node tools/run build",
+    "clean": "rimraf ./dist && echo \"Dist has been rimraf'd\" ",
+    "purge": "rimraf ./dist ./node_modules && echo \"Dist and node_modules have been purged!! \" ",
     "webpack": "webpack --progress --color"
   },
   "repository": {
