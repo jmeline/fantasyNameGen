@@ -1,10 +1,13 @@
 {
-  "name": "fantasy_name_gen",
+  "name": "fantasy_name_generator",
   "version": "1.0.0",
-  "description": "Generates fantasy names",
+  "description": "Generates Fantasy Names",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf ./dist && echo \"Dist has been rimraf'd\" ",
+    "build": "babel-node tools/run build",
+    "webpack": "webpack --progress --color"
   },
   "repository": {
     "type": "git",
@@ -17,31 +20,24 @@
   },
   "homepage": "https://github.com/jmeline/fantasyNameGen#readme",
   "devDependencies": {
+    "babel": "^6.5.2",
     "babel-cli": "^6.5.1",
     "babel-core": "^6.5.2",
     "babel-eslint": "^5.0.0",
     "babel-loader": "^6.2.3",
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
-    "babel-preset-stage-0": "^6.5.0",
-    "del": "^2.2.0",
-    "file-loader": "^0.8.5",
-    "less-loader": "^2.2.2",
-    "mocha": "^2.4.5",
-    "rimraf": "^2.5.2",
-    "style-loader": "^0.13.0",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.12.13"
-  },
-  "dependencies": {
-    "bootstrap": "^3.3.6",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.2.0",
+    "eslint-config-airbnb": "^5.0.1",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-import": "^1.0.0-beta.0",
+    "eslint-plugin-react": "^4.0.0",
+    "json-loader": "^0.5.4",
     "less": "^2.6.0",
-    "ramda": "^0.19.1",
+    "less-loader": "^2.2.2",
     "react": "^0.14.7",
-    "react-bootstrap": "^0.28.3",
-    "react-dom": "^0.14.7",
-    "react-redux": "^4.4.0",
-    "react-router": "^2.0.0",
-    "redux": "^3.3.1"
+    "rimraf": "^2.5.2",
+    "webpack": "^1.12.13"
   }
 }
