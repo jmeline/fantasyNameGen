@@ -1,0 +1,19 @@
+{
+  "name": "fantasy_name_gen",
+  "version": "1.0.0",
+  "description": "Generates fantasy names",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmeline/fantasyNameGen.git"
+  },
+  "author": "jmeline",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmeline/fantasyNameGen/issues"
+  },
+  "homepage": "https://github.com/jmeline/fantasyNameGen#readme"
+}
